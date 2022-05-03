@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+main() {
+       
+    int anonasc, anoatual,idade;
+    
+    printf("Digite o ano atual: ");
+    scanf("%d",&anoatual);
+    
+    printf("Digite o ano de nascimento: ");
+    scanf("%d",&anonasc);
+    
+    idade = anoatual - anonasc;
+    
+    if (idade >= 18) {
+           printf("\nACESSO PERMITIDO\n\n"); 
+    } else {
+           printf("\nACESSO NEGADO\n\n");
+           }   
+                 
+    system("pause");   
+       
+       }

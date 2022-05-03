@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+main () {
+     
+    float d1, t1, v1, d2, t2, v2;
+    
+    printf("Distancia percorrida pelo carro 1: ");
+    scanf("%f", &d1);
+    
+    printf("Tempo decorrido para o carro 1: ");
+    scanf("%f", &t1);
+    
+    printf("Distancia percorrida pelo carro 2: ");
+    scanf("%f", &d2);
+    
+    printf("Tempo decorrido para o carro 2: ");
+    scanf("%f", &t2);
+    
+    v1 = d1 / t1;
+    v2 = d2 / t2;
+    
+    if (v1 > v2) {     
+           printf("\n\nCarro 1 ganhou\n");
+           
+    } else if (v1 == v2) {
+           printf("\n\nEMPATE\n");
+    } else {
+           printf("\n\nCarro 2 ganhou\n");       
+    }
+     
+       system("pause");  
+     
+     }
